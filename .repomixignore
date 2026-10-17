@@ -1,0 +1,68 @@
+# ====================================================================
+# Repomix Ignore File for "Company Scans" Project
+# Repomix automatically detects and uses this file every time you run:
+#   repomix
+# ====================================================================
+
+# Repomix Outputs (Prevents packing previous repomix runs)
+repomix-output.*
+repomix-output.xml
+repomix-output.txt
+repomix-output.md
+repomix-output.json
+
+# Dependencies & Lockfiles
+**/node_modules/
+**/package-lock.json
+**/pnpm-lock.yaml
+**/yarn.lock
+
+# Build & Compilation Outputs (.NET & Vite)
+**/bin/
+**/obj/
+**/dist/
+**/build/
+**/out/
+
+# IDE & Editor Configurations
+**/.vs/
+**/.vscode/
+**/.idea/
+
+# Large Datasets & Media Files (Avoids burning thousands of AI tokens on images)
+imgas/
+**/samples/
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+*.bmp
+*.tiff
+*.ico
+*.pdf
+*.zip
+*.tar.gz
+*.7z
+# Vector graphics (uncomment if you want SVG paths sent to the AI)
+*.svg
+
+# Sensitive Credentials & Secrets (Security Protection)
+backend/appsettings.json
+test_gemini.js
+test_ocr.js
+*.env
+*.env.*
+*.key
+*.pem
+*.pfx
+secrets.json
+
+# Logs & Temporary Files
+*.log
+**/logs/
+**/temp/
+**/tmp/
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store
